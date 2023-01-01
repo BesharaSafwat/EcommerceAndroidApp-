@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/prod_thumb"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:layout_marginHorizontal="24dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:src="@drawable/search_icon" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/img_recycler"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:scrollbarSize="4dp"
+        android:scrollbars="horizontal" />
+    <LinearLayout
+        android:layout_width="56dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/grey_backgnd"
+        android:orientation="vertical">
+        <!--        <ImageButton-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:layout_marginHorizontal="8dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:id="@+id/colorselect"-->
+        <!--            android:focusable="true" />-->
+
+        <ImageButton
+            android:id="@+id/clrslct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/brown_backgnd"
+            />
+
+        <ImageButton
+            android:id="@+id/clrslct2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/backgnd_yellow" />
+        <ImageButton
+            android:id="@+id/clrslct3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/white_backgnd" />
+    </LinearLayout>
+
+    <!--        android:buttonTint="@color/teal_200" -->
+
+    <TextView
+        android:id="@+id/prod_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="gdhsfmfwdfmsd"
+        android:textSize="30sp" />
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_toEndOf="@+id/prod_title"-->
+    <!--        android:textSize="10sp"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:text="thumb"-->
+    <!--        android:id="@+id/thumb"-->
+    <!--        />-->
+
+    <LinearLayout
+        android:id="@+id/linprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prod_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/prod_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="50$"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/prod_title"
+        android:layout_marginStart="280dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btnplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/greybtn_backgnd"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <TextView
+            android:id="@+id/txtamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="1"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnminus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/greybtn_backgnd"
+            android:src="@drawable/icons8_minus_24" />
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/disc_prcnt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/linprice"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:text="discount"-->
+<!--        android:textSize="20sp" />-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/linrate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/linprice"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/star"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:src="@drawable/ic_baseline_star_24" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/prod_rate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:layout_toEndOf="@+id/star"-->
+<!--            android:text="4.5"-->
+<!--            android:textSize="18sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/prod_brand"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@+id/prod_rate"-->
+<!--            android:text="brand "-->
+<!--            android:textSize="15sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/prod_stock"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/star"-->
+<!--            android:text="stock"-->
+<!--            android:textSize="15sp" />-->
+<!--    </RelativeLayout>-->
+
+    <TextView
+        android:id="@+id/prod_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linprice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:text="An apple mobile which is nothing like apple"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        >
+        <ImageButton
+            android:id="@+id/saveitembtn"
+            android:layout_width="80dp"
+            android:layout_height="72dp"
+            android:background="@drawable/grey_backgnd"
+            android:src="@drawable/ic_baseline_save_24"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+
+            />
+        <Button
+            android:id="@+id/additembtn"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/black_backgnd"
+            android:text="Add to cart"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinsmed"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

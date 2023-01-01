@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/logofashion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/logofashion"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/loging"
+        android:layout_below="@+id/logofashion"
+        android:fontFamily="@font/popins_font"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="please login or sign up to continue to our app"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/loging"
+        android:fontFamily="@font/poppinsreg"
+        android:id="@+id/pleaselogin"
+        android:layout_marginBottom="24dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/enterdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pleaselogin"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="left"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppinsreg"
+            android:text="Email"
+            android:textSize="15sp"
+            android:id="@+id/txtmail"/>
+
+        <EditText
+            android:id="@+id/emailEd"
+            android:hint="Example@mail.com"
+            android:layout_below="@+id/txtmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20sp" />
+<!--        android:drawableEnd="@drawable/ic_baseline_check_circle_24"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinsreg"
+            android:text="Password"
+            android:textSize="18sp"
+            android:layout_below="@+id/emailEd"
+            android:id="@+id/txtpass"/>
+
+        <EditText
+            android:id="@+id/pswrdEd"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpass"
+            android:layout_marginStart="20dp"
+            android:hint="2e%3324*#"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtpass"
+            android:layout_toEndOf="@+id/pswrdEd"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+        <TextView
+            android:id="@+id/forgotpswrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/poppinsreg"
+            android:text="Forgot your password ?"
+            android:textSize="15sp"
+            android:layout_below="@+id/pswrdEd"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btntologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterdata"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/black_backgnd"
+        android:fontFamily="@font/poppinsmed"
+        android:minHeight="48dp"
+        android:text=" Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntologin"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsmed"
+        android:text="or"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp"
+        />
+    <Button
+        android:id="@+id/btnfb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtor"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bluebackgnd"
+        android:drawableLeft="@drawable/fbicon"
+        android:fontFamily="@font/poppinsmed"
+        android:paddingVertical="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="Continue with Facebook"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btngoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnfb"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/whitebkgnd"
+        android:drawableLeft="@drawable/googleicon"
+        android:fontFamily="@font/poppinsmed"
+        android:paddingVertical="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="Continue with Google"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnapple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btngoogle"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/whitebkgnd"
+        android:drawableLeft="@drawable/appleicon"
+        android:fontFamily="@font/poppinsmed"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="Continue with Apple"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+</RelativeLayout>

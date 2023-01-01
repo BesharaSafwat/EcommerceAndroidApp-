@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_model" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Types Offers \nWithin Your Reach"
+        android:layout_below="@+id/img3"
+        android:id="@+id/txt3_1"
+        android:textSize="30sp"
+        android:fontFamily="@font/popins_bold"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmed"
+        android:text="afsagadgszzdf"
+        android:layout_below="@+id/txt3_1"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <ImageButton
+        android:id="@+id/backbtn3"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/white"
+        android:src="@drawable/back_btn"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>
